@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+        /*function comparePrice (object1, object2) {
+        if (object1.price > object2.price) {
+          return object2;
+        }
+        else {return object1;
+        }
+      }  <--- task from L8-d*/
+
+      function isSameProduct(object1, object2) {
+        if (object1.price === object2.price &&  object1.name === object2.name) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+
+      const object1 = {
+        name: 'basketball',
+        price: 2095,
+        ['delivery-time']: '3 days',
+      };
+
+      const object2 = {
+        name: 'football',
+        price: 1995,
+      }
+
+      /*console.log(comparePrice(object1, object2)); <-- task from L8-d*/
+      /*object1.price += 500;
+      console.log(object1); <--- task from L8-a*/
+      console.log(isSameProduct(object1, object2));
+      
+    </script>
+  </body>
+</html>
