@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM-HW</title>
+  </head>
+  <body>
+    <button>9a</button>
+    <button class="secondButton">9b</button>
+    <br>
+
+    <button class="heads" onclick="
+    document.querySelector('.choice').
+    innerHTML = 'You chose: heads';" style="margin-top:20px;"
+    >Heads</button>
+
+    <button class="tails" onclick="
+    document.querySelector('.choice').
+    innerHTML = 'You chose: tails';">Tails</button>
+
+    <p class="choice"></p>
+  </body>
+
+  <script>
+    console.log(document.querySelector('button'));
+
+    document.querySelector('.secondButton')
+    .innerHTML = '9b done!';
+
+
+  </script>
+</html>
