@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM HW2</title>
+  </head>
+  <body>
+    <input placeholder="Name" class="inputText">
+
+    <button onclick="
+      const inputElement = document.querySelector('.inputText');
+      document.querySelector('.inputMessage')
+      .innerHTML = `Your name is: ${inputElement.value}`;
+      ">Submit</button>
+
+    <p class="inputMessage"></p>  
+  </body>
+</html>
