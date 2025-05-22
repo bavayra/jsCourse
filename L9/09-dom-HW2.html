@@ -4,14 +4,23 @@
     <title>DOM HW2</title>
   </head>
   <body>
-    <input placeholder="Name" class="inputText">
+    <input placeholder="Name" class="inputText" onkeydown="
+     if (event.key === 'Enter') {
+     submitEvent();}">
 
     <button onclick="
-      const inputElement = document.querySelector('.inputText');
-      document.querySelector('.inputMessage')
-      .innerHTML = `Your name is: ${inputElement.value}`;
-      ">Submit</button>
+     submitEvent();"
+      >Submit</button>
 
     <p class="inputMessage"></p>  
   </body>
+  <script>
+
+    function submitEvent(event) {
+      const inputElement = document.querySelector('.inputText');
+      document.querySelector('.inputMessage')
+      .innerHTML = `Your name is: ${inputElement.value}`;
+    }
+    
+  </script>
 </html>
