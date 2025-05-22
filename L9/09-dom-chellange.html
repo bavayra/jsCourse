@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM projects</title>
+  </head>
+   <body>
+   <!--<p>YouTube Subscribe Button</p>
+   <button onclick="
+    subscribe();
+   " class="jsSubscribeButton">Subscribe</button>
+
+   <p>Amazon Shipping Calculator</p>
+
+   <input class="jsCostInput" placeholder="Cost of order" onkeydown="
+   handleCostKeydown(event)">
+   <button onclick="
+   calculateTotal();">Calculate</button>
+
+   <p class="jsTotalCost"></p>-->
+
+   <input class="jsInput" onkeyup="
+    const inputElement = document.querySelector('.jsInput');
+    document.querySelector('.inputMessage').innerHTML = inputElement.value;
+   ">
+
+   <p class="inputMessage"></p>
+
+    </body>
+
+    <script>
+
+      /*function handleCostKeydown(event){
+        if(event.key === 'Enter') {
+        calculateTotal();
+      }
+      }
+
+      function calculateTotal() {
+        const inputElement = document.querySelector('.jsCostInput');
+       let cost = Number(inputElement.value);
+
+       if(cost < (4000/100)) {
+        cost = (cost * 100 + 1000) / 100; /*On the ask it said that there was an issue with 0.99s costs, so in order to fix an issue I chose this way though the guy in the video did it in a different way*/
+      /* }
+
+       document.querySelector('.jsTotalCost')
+       .innerHTML = `$${cost}`;
+      }
+      function subscribe () {
+       const buttonElement = document.querySelector('.jsSubscribeButton');
+
+      if(buttonElement.innerText === 'Subscribe') {
+      buttonElement.innerHTML = 'Subscribed';
+   }
+      else {
+      buttonElement.innerHTML = 'Subscribe';
+   }
+      }*/
+    </script>
+    </body>
+  </head>
+</html>
