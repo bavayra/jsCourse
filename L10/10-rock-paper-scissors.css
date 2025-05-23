@@ -1,0 +1,43 @@
+body {
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .moveIcon {
+        height: 60px;
+        padding: 16px;
+      }
+
+      .moveButton {
+        border-radius: 60px;
+        background-color: black;
+        border: 2px solid white;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      .resetButton {
+        background-color: rgb(197, 191, 191);
+        color: black;
+        padding: 8px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+
+      .jsResult {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .jsScore {
+        margin-bottom: 25px;
+        margin-top: 35px;
+      }
