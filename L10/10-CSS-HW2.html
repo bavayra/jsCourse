@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS HW2</title>
+
+    <style>
+      .toggleButton {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right:10px;
+        font-size: 15px;
+        cursor:pointer;
+      }
+
+      .is-toggled {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="toggleButton click" onclick="clickButton('.click');">
+      Gaming</button>
+
+      <button class="toggleButton click-2" onclick="clickButton('.click-2');">
+      Music</button>
+
+      <button class="toggleButton click-3" onclick="clickButton('.click-3');">
+      Tech</button>
+  </body>
+
+  <script>
+    function clickButton (selector) {
+      const button = document.querySelector(selector);
+      if (!button.classList.contains('is-toggled')) {
+        button.classList.add('is-toggled');
+      } else {
+        button.classList.remove('is-toggled');}
+      }
+  </script>
+</html>
