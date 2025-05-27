@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays loops HW</title>
+    <style>
+    </style>
+  </head>
+
+  <body>
+
+  <script>
+    /*const nums = [10, 20, 30];
+    nums[2] = 99;
+    console.log(nums); <----task 1 */
+
+    function getLastValue(array) {
+      const lastIndex = array.length - 1;
+        return array[lastIndex];
+    }
+
+      console.log(getLastValue([1, 20, 22, 24, 5]));
+      console.log(getLastValue(['hi', 'hello', 'hey']));
+
+
+    function arraySwap(array) {
+      const swapLastIndex = array.length - 1;
+      const swapFirstIndex = array[0];
+
+      const swapLastValue = array[swapLastIndex];
+      const swapFirstValue = array[0];
+
+      array[0] = swapLastValue;
+      array[swapLastIndex] = swapFirstValue;
+
+      return array;   
+    }  
+      console.log(arraySwap([1, 20, 22, 24, 5]));
+      console.log(arraySwap(['hi', 'hello', 'hey']));
+  </script>
+
+  </body>
+</html>
